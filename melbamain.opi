@@ -3506,9 +3506,9 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>1b6e8b21:15d50bd59e4:-7e63</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
-    <height>31</height>
+    <height>36</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -3530,7 +3530,7 @@ $(pv_value)</tooltip>
     <width>37</width>
     <x>694</x>
     <name>Grouping Container melba_020:pump</name>
-    <y>478</y>
+    <y>476</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -3583,14 +3583,14 @@ $(pv_value)</tooltip>
       <wuid>1b6e8b21:15d50bd59e4:-7e82</wuid>
       <transparent>false</transparent>
       <points>
-        <point x="0" y="19" />
-        <point x="0" y="7" />
-        <point x="24" y="7" />
-        <point x="24" y="-2" />
-        <point x="36" y="-2" />
-        <point x="36" y="28" />
-        <point x="24" y="28" />
-        <point x="24" y="19" />
+        <point x="0" y="21" />
+        <point x="0" y="9" />
+        <point x="24" y="9" />
+        <point x="24" y="0" />
+        <point x="36" y="0" />
+        <point x="36" y="30" />
+        <point x="24" y="30" />
+        <point x="24" y="21" />
       </points>
       <pv_value />
       <alpha>255</alpha>
@@ -3618,8 +3618,8 @@ $(pv_value)</tooltip>
       </background_color>
       <width>37</width>
       <x>0</x>
-      <name>Polygon_1</name>
-      <y>-2</y>
+      <name>Polygon melba_020:pump:on_get</name>
+      <y>0</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color red="255" green="0" blue="0" />
@@ -3937,14 +3937,14 @@ $(pv_value)</tooltip>
       <wuid>-3da12f84:15d549a29ff:-7d81</wuid>
       <transparent>false</transparent>
       <points>
-        <point x="10" y="0" />
-        <point x="22" y="0" />
-        <point x="22" y="24" />
-        <point x="31" y="24" />
-        <point x="31" y="36" />
-        <point x="1" y="36" />
-        <point x="1" y="24" />
-        <point x="10" y="24" />
+        <point x="9" y="0" />
+        <point x="21" y="0" />
+        <point x="21" y="24" />
+        <point x="30" y="24" />
+        <point x="30" y="36" />
+        <point x="0" y="36" />
+        <point x="0" y="24" />
+        <point x="9" y="24" />
       </points>
       <pv_value />
       <alpha>255</alpha>
@@ -3959,7 +3959,7 @@ $(pv_value)</tooltip>
         <keep_wh_ratio>true</keep_wh_ratio>
       </scale_options>
       <visible>true</visible>
-      <pv_name>melba_020:pump:on_get</pv_name>
+      <pv_name>melba_030:pump:on_get</pv_name>
       <border_color>
         <color red="0" green="128" blue="255" />
       </border_color>
@@ -3971,8 +3971,8 @@ $(pv_value)</tooltip>
         <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <width>31</width>
-      <x>1</x>
-      <name>Polygon melba_020:pump:on_get</name>
+      <x>0</x>
+      <name>Polygon melba_030:pump:on_get</name>
       <y>0</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
@@ -4777,7 +4777,7 @@ $(pv_value)</tooltip>
             <color name="on &amp; failure" red="255" green="0" blue="0" />
           </value>
         </exp>
-        <pv trig="true">$(PNEUVAL):on_get</pv>
+        <pv trig="true">$(PNEUVAL2):on_get</pv>
       </rule>
     </rules>
     <enabled>true</enabled>
@@ -4794,7 +4794,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <PNEUVAL>melba_030:pv</PNEUVAL>
+      <PNEUVAL2>melba_030:pv</PNEUVAL2>
     </macros>
     <visible>true</visible>
     <border_color>
@@ -4816,7 +4816,8 @@ $(pv_value)</tooltip>
         <path>valve.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <PNEUVAL>melba_030:pv</PNEUVAL>
+          <PNEUVAL1>melba_010:pv</PNEUVAL1>
+          <PNEUVAL2>melba_030:pv</PNEUVAL2>
           <GAUGE>melba_030:gauge</GAUGE>
         </macros>
         <replace>2</replace>
@@ -13833,7 +13834,7 @@ $(pv_value)</tooltip>
             <color name="on &amp; failure" red="255" green="0" blue="0" />
           </value>
         </exp>
-        <pv trig="true">$(PNEUVAL):on_get</pv>
+        <pv trig="true">$(PNEUVAL1):on_get</pv>
       </rule>
     </rules>
     <enabled>true</enabled>
@@ -13850,7 +13851,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <PNEUVAL>melba_010:pv</PNEUVAL>
+      <PNEUVAL1>melba_010:pv</PNEUVAL1>
     </macros>
     <visible>true</visible>
     <border_color>
@@ -13872,7 +13873,8 @@ $(pv_value)</tooltip>
         <path>valve.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <PNEUVAL>melba_010:pv</PNEUVAL>
+          <PNEUVAL1>melba_010:pv</PNEUVAL1>
+          <PNEUVAL2>melba_030:pv</PNEUVAL2>
           <GAUGE>melba_030:gauge</GAUGE>
         </macros>
         <replace>2</replace>
@@ -14425,7 +14427,8 @@ $(pv_value)</tooltip>
         <path>valve.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <PNEUVAL>melba_060:pv</PNEUVAL>
+          <PNEUVAL1>melba_060:pv</PNEUVAL1>
+          <PNEUVAL2>melba_030:pv</PNEUVAL2>
           <GAUGE>melba_060:gauge</GAUGE>
         </macros>
         <replace>2</replace>
@@ -19360,6 +19363,140 @@ $(pv_value)</tooltip>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
       </widget>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <border_style>0</border_style>
+    <tooltip></tooltip>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-75d6464b:16002e38a62:-75f</wuid>
+    <transparent>true</transparent>
+    <lock_children>true</lock_children>
+    <scripts />
+    <height>37</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+      <PUMP>steam:pump</PUMP>
+    </macros>
+    <visible>true</visible>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Grouping Container</widget_type>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>31</width>
+    <x>724</x>
+    <name>Grouping Container steam:pump</name>
+    <y>261</y>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>steam_pumpe.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <PUMP>steam:pump</PUMP>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
+    <fc>false</fc>
+    <show_scrollbar>false</show_scrollbar>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
+      <border_style>0</border_style>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <line_width>1</line_width>
+      <horizontal_fill>true</horizontal_fill>
+      <alarm_pulsing>false</alarm_pulsing>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <rules>
+        <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>
+              <color name="on &amp; okay" red="0" green="255" blue="0" />
+            </value>
+          </exp>
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="off" red="192" green="192" blue="192" />
+            </value>
+          </exp>
+          <exp bool_exp="(pv0==1) &amp;&amp; (pvSAtr1!=&quot;Running&quot;)">
+            <value>
+              <color name="on &amp; failure" red="255" green="0" blue="0" />
+            </value>
+          </exp>
+          <pv trig="true">$(PUMP):on_get</pv>
+          <pv trig="true">$(PUMP):stat_get</pv>
+        </rule>
+      </rules>
+      <enabled>true</enabled>
+      <wuid>-75d6464b:16002e38a62:-75e</wuid>
+      <transparent>false</transparent>
+      <points>
+        <point x="9" y="0" />
+        <point x="21" y="0" />
+        <point x="21" y="24" />
+        <point x="30" y="24" />
+        <point x="30" y="36" />
+        <point x="0" y="36" />
+        <point x="0" y="24" />
+        <point x="9" y="24" />
+      </points>
+      <pv_value />
+      <alpha>255</alpha>
+      <rotation_angle>0.0</rotation_angle>
+      <scripts />
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <height>37</height>
+      <border_width>1</border_width>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <visible>true</visible>
+      <pv_name>steam:pump:on_get</pv_name>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <anti_alias>true</anti_alias>
+      <line_style>0</line_style>
+      <widget_type>Polygon</widget_type>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color name="off" red="192" green="192" blue="192" />
+      </background_color>
+      <width>31</width>
+      <x>0</x>
+      <name>Polygon steam:pump:on_get</name>
+      <y>0</y>
+      <fill_level>0.0</fill_level>
+      <foreground_color>
+        <color red="255" green="0" blue="0" />
+      </foreground_color>
+      <actions hook="false" hook_all="false" />
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      </font>
+      <line_color>
+        <color name="white" red="255" green="255" blue="255" />
+      </line_color>
     </widget>
   </widget>
 </display>
