@@ -14422,19 +14422,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="white" red="255" green="255" blue="255" />
     </foreground_color>
-    <actions hook="true" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>valve.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <PNEUVAL1>melba_060:pv</PNEUVAL1>
-          <PNEUVAL2>melba_030:pv</PNEUVAL2>
-          <GAUGE>melba_060:gauge</GAUGE>
-        </macros>
-        <replace>2</replace>
-        <description></description>
-      </action>
-    </actions>
+    <actions hook="true" hook_all="false" />
     <fc>true</fc>
     <show_scrollbar>false</show_scrollbar>
     <font>
