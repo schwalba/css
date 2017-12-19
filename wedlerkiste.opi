@@ -9,7 +9,7 @@
   <height>480</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <L>buna_r5:</L>
+    <M>melba:</M>
     <N>wedlposu01:</N>
   </macros>
   <boy_version>4.0.103.201507131348</boy_version>
@@ -43,7 +43,7 @@
     <wuid>62c3afca:158bae0ae22:-6899</wuid>
     <transparent>true</transparent>
     <auto_size>false</auto_size>
-    <text>Wedlerkiste01</text>
+    <text>$(M)$(N)</text>
     <scripts />
     <height>43</height>
     <border_width>1</border_width>
@@ -82,10 +82,10 @@ $(pv_value)</tooltip>
     <effect_3d>true</effect_3d>
     <bit>-1</bit>
     <pv_value />
-    <height>23</height>
+    <height>25</height>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>$(L)$(N)on_get</pv_name>
+    <pv_name>$(M)$(N)on_get</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -98,7 +98,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>62c3afca:158bae0ae22:-5e71</wuid>
     <on_color>
-      <color red="0" green="255" blue="0" />
+      <color red="0" green="100" blue="0" />
     </on_color>
     <scripts />
     <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -109,14 +109,14 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color red="0" green="100" blue="0" />
+      <color name="on &amp; okay" red="0" green="255" blue="0" />
     </off_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
     <square_led>false</square_led>
-    <width>23</width>
+    <width>25</width>
     <x>124</x>
     <data_type>0</data_type>
     <y>78</y>
@@ -161,7 +161,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>$(L)$(N)on_set</pv_name>
+    <pv_name>$(M)$(N)on_set</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -216,7 +216,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>$(L)$(N)stat_get_stro</pv_name>
+    <pv_name>$(M)$(N)stat_get_stro</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -267,7 +267,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>$L)$(N)stat_get</pv_name>
+    <pv_name>$(M)$(N)stat_get</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -309,6 +309,51 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <border_style>0</border_style>
+    <tooltip></tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>20be2959:1606deccadb:-63e9</wuid>
+    <transparent>false</transparent>
+    <auto_size>false</auto_size>
+    <text>Open Webpage</text>
+    <scripts />
+    <height>25</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Label</widget_type>
+    <wrap_words>false</wrap_words>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>120</width>
+    <x>65</x>
+    <name>Label_1</name>
+    <y>447</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_WEBPAGE">
+        <hyperlink>http://10.32.240.74</hyperlink>
+        <description></description>
+      </action>
+    </actions>
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
     </font>
   </widget>
 </display>
