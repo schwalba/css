@@ -6,7 +6,7 @@
   <show_grid>true</show_grid>
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <scripts />
-  <height>240</height>
+  <height>280</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
@@ -187,9 +187,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <points>
       <point x="12" y="12" />
-      <point x="12" y="231" />
-      <point x="12" y="231" />
-      <point x="301" y="231" />
+      <point x="12" y="261" />
+      <point x="12" y="261" />
+      <point x="301" y="261" />
       <point x="301" y="12" />
       <point x="12" y="12" />
       <point x="12" y="12" />
@@ -202,7 +202,7 @@ $(pv_value)</tooltip>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
-    <height>220</height>
+    <height>250</height>
     <border_width>2</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -517,6 +517,100 @@ $(pv_value)</tooltip>
     <x>60</x>
     <name>Label_9</name>
     <y>168</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <enabled>true</enabled>
+    <wuid>7ee23ace:1606a08f298:-6e97</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <horizontal>true</horizontal>
+    <pv_value />
+    <numBits>4</numBits>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <height>20</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>$(PUMP):sp_all_get</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <bitReverse>false</bitReverse>
+    <label />
+    <widget_type>Byte Monitor</widget_type>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <square_led>false</square_led>
+    <startBit>0</startBit>
+    <width>70</width>
+    <x>156</x>
+    <name>Byte Monitor</name>
+    <y>204</y>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <border_style>1</border_style>
+    <tooltip></tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>7ee23ace:1606a08f298:-6e77</wuid>
+    <transparent>false</transparent>
+    <auto_size>false</auto_size>
+    <text>Interlock</text>
+    <scripts />
+    <height>25</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color name="black" red="0" green="0" blue="0" />
+    </border_color>
+    <widget_type>Label</widget_type>
+    <wrap_words>false</wrap_words>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>80</width>
+    <x>60</x>
+    <name>Label_10</name>
+    <y>201</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
