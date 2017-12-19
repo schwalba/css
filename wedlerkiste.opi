@@ -311,17 +311,20 @@ $(pv_value)</tooltip>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <border_style>0</border_style>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <toggle_button>false</toggle_button>
+    <border_style>6</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip></tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
+    <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
     <wuid>20be2959:1606deccadb:-63e9</wuid>
-    <transparent>false</transparent>
-    <auto_size>false</auto_size>
+    <pv_value />
     <text>Open Webpage</text>
     <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
     <height>25</height>
     <border_width>1</border_width>
     <scale_options>
@@ -329,20 +332,22 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
+    <image></image>
     <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
+    <pv_name></pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <widget_type>Label</widget_type>
-    <wrap_words>false</wrap_words>
+    <widget_type>Action Button</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
-      <color red="255" green="255" blue="255" />
+      <color name="off" red="192" green="192" blue="192" />
     </background_color>
     <width>120</width>
     <x>65</x>
-    <name>Label_1</name>
+    <name>Label_Action_OpenWebpage</name>
     <y>447</y>
+    <style>0</style>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
