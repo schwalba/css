@@ -1405,16 +1405,18 @@ $(pv_value)</tooltip>
     </scale_options>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <format_type>0</format_type>
-    <limits_from_pv>true</limits_from_pv>
+    <limits_from_pv>false</limits_from_pv>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>100</width>
     <x>120</x>
     <y>138</y>
+    <maximum>Infinity</maximum>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
+    <minimum>-Infinity</minimum>
     <font>
       <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
     </font>
